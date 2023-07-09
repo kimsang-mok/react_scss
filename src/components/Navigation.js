@@ -5,18 +5,19 @@ import './Navigation.scss';
 
 
 function Navigation() {
+    const [openClass, setOpenClass] = useState(false)
+    const [hiddenClass, setHiddenClass] = useState(true)
+    const [noScrollClass, setNoScrollClass] = useState(false)
+
     const clickHandler = () => {
-        const btn = document.getElementById('menu-btn')
-        const nav = document.getElementById('menu')
-
-        btn.classList.toggle('open')
-        nav.classList.toggle('hidden')
-        document.body.classList.toggle('no-scroll')
-
+        setOpenClass(!openClass)
+        setHiddenClass(openClass)
+        setNoScrollClass(openClass)
     }
 
+
     return (
-        <>
+        <div className={noScrollClass ? 'App no-scroll' : 'App'}>
             <nav className="navbar">
                 <div className="navbar-container">
                     <div className="navbar-brand">
@@ -71,7 +72,7 @@ function Navigation() {
                     {/*
               Hamburger Menu
           */}
-                    <button onClick={clickHandler} type="button" className="hamburger" id="menu-btn">
+                    <button onClick={clickHandler} type="button" className={openClass ? 'hamburger open' : 'hamburger'} id="menu-btn">
                         <span className="hamburger--top" />
                         <span className="hamburger--middle" />
                         <span className="hamburger--bottom" />
@@ -79,7 +80,7 @@ function Navigation() {
                 </div>
             </nav>
             {/* Mobile menu */}
-            <div className="mobile-menu hidden" id="menu">
+            <div className={hiddenClass ? 'mobile-menu hidden' : 'mobile-menu'} id="menu">
                 <ul className="navbar-head">
                     <li>
                         <a href="#">Menu</a>
@@ -104,7 +105,7 @@ function Navigation() {
             </div>
 
 
-        </>
+        </div>
     )
 }
 

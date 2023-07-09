@@ -165,7 +165,7 @@ img {
     display: none;
 
     &:hover {
-        background-color: rgb(201, 192, 192);
+        background-color: rgba(0, 0, 0, 0.09);
         line-height: 30px;
         border-radius: 1em;
         line-height: 10px;
@@ -266,6 +266,10 @@ img {
             align-items: center;
             font-size: 16px;
         }
+    }
+
+    @media (min-width: 768px) {
+        display: none;
     }
 }
 

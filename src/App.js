@@ -1,25 +1,17 @@
-import logo from './logo.svg';
 import './App.scss';
 import Navigation from './components/Navigation';
+import FreeItems from './components/Rewards/FreeItems';
+import EarnStars from './components/Rewards/EarnStars';
+import LinkDelta from './components/bootstrap_components/LinkDelta';
 
 function App() {
   return (
     <div className="App">
       <Navigation></Navigation>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <FreeItems />
+      <EarnStars />
+      <LinkDelta />
     </div>
   );
 }
