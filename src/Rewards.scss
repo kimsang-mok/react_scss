@@ -1,0 +1,33 @@
+.rewards {
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}
+
+
+
+/*
+@media (min-width: 1440px) and (max-width: 2560px) {
+    main {
+        min-width: 1440px;
+        margin: 0 20%;
+    }
+
+}
+*/
+@media (min-width: 1440px) {
+    .rewards {
+        nav {
+            max-width: 1520px;
+            margin: auto;
+        }
+
+        main {
+            max-width: 1440px;
+            margin: auto;
+        }
+    }
+}

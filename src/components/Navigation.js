@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 
 import logo from './images/starbucks-logo.png';
 import './Navigation.scss';
@@ -12,25 +13,25 @@ function Navigation() {
     const clickHandler = () => {
         setOpenClass(!openClass)
         setHiddenClass(openClass)
-        setNoScrollClass(openClass)
+        /* setNoScrollClass(openClass) */
     }
 
 
     return (
-        <div className={noScrollClass ? 'App no-scroll' : 'App'}>
-            <nav className="navbar">
+        <div>
+            <nav className="navigation-bar">
                 <div className="navbar-container">
                     <div className="navbar-brand">
-                        <a href="#">
+                        <Link to="/">
                             <img src={logo}></img>
-                        </a>
+                        </Link>
                     </div>
                     <ul className="navbar-nav-left">
                         <li>
                             <a href="#">Menu</a>
                         </li>
                         <li>
-                            <a href="./rewards_page.html">Rewards</a>
+                            <Link to="/rewards">Rewards</Link>
                         </li>
                         <li>
                             <a href="#">Gift Cards</a>
@@ -86,7 +87,7 @@ function Navigation() {
                         <a href="#">Menu</a>
                     </li>
                     <li>
-                        <a href="#">Rewards</a>
+                        <a href="/rewards">Rewards</a>
                     </li>
                     <li>
                         <a href="#">Gift Cards</a>

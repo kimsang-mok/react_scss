@@ -41,7 +41,7 @@ function LinkDelta() {
                             <div className="sub_content">
                                 <img src="https://www.starbucks.com/weblx/images/rewards/loyalty-partnerships/delta-skymiles.png"></img>
                                 <p><a href="https://www.deltastarbucks.com/content/starbucks/en/overview.html?mkcpgn=dipd-sbux7042" target="_blank">Link your Delta SkyMiles®</a> and Starbucks® Rewards accounts to earn 1 mile per $1* spent at Starbucks and double Stars on Delta travel days.</p>
-                                <button>Join Starbucks® Rewards</button>
+                                <button className='btn btn-green'>Join Starbucks® Rewards</button>
                             </div>
                         </div>
                         <div className='starImage2 col-md-3'>

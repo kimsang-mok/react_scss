@@ -1,3 +1,7 @@
+@import "../Button.scss";
+
+
+
 .outer_box {
     padding: 32px;
     background-image: url('https://www.starbucks.com/app-assets/844262945b2a8b8cfb293156e2583872.png');
@@ -15,6 +19,7 @@
 
 .info {
     text-align: center;
+
     .main_content {
         h2 {
             font-size: 28px;
@@ -33,39 +38,52 @@
     .outer_box {
         padding: 0;
     }
+
     .content_inner {
         padding: 8px 16px;
     }
 
     .linkDelta {
-        margin: 0;
+        margin: 0 16px;
+
         p {
             font-size: 14px;
         }
-        .main_content {
-            h2 {
-            padding: 16px 48px 0;
-            font-size: 24px;
-            }
-            p {
-                margin: 0;
-                padding-top: 16px;
-            }
-        }
-        .sub_content {
-            padding-top: 32px;
 
-            button {
-                margin: 24px 0 8px;
+        .info {
+            padding: 0 16px;
+
+            .main_content {
+                h2 {
+                    padding: 16px 48px 0;
+                    font-size: 24px;
+                }
+
+                p {
+                    width: 90%;
+                    margin: auto;
+                    padding-top: 16px;
+                }
+            }
+
+            .sub_content {
+                padding: 32px 20px 0;
+
+                button {
+                    margin: 24px 0 8px;
+                }
             }
         }
-        
-        
+
+
+
     }
+
     .starImage1 {
         display: flex;
         justify-content: flex-start;
     }
+
     .starImage2 {
         display: flex;
         justify-content: flex-end;
